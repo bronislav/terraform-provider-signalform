@@ -35,7 +35,7 @@ clean:
 	make -C build clean
 
 .PHONY: build
-build: test
+build:
 	mkdir -p $(GOPATH)/bin
 	cd $(BASE) && go build -o $(GOPATH)/bin/terraform-provider-signalform
 
